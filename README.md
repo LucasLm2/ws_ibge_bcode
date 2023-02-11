@@ -17,7 +17,7 @@ Configure o arquivo .env seguindo o env.example e rode o comando abaixo.
 #### Retorna lista de municípios
 
 ```http
-  GET /v1/municipios/uf/{uf}
+  GET /v1/municipios/{uf}
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
