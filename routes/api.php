@@ -14,9 +14,8 @@ use App\Http\Controllers\IbgeController;
 |
 */
 Route::prefix('v1')->group(function () {
-    Route::prefix('ibge')->group(function () {
-        Route::prefix('municipios')->group(function () {
-            Route::get('/uf/{uf}', [IbgeController::class, 'listarMunicipiosPorUf']);
-        });
+    Route::prefix('municipios')->group(function () {
+        Route::get('/{uf}', [IbgeController::class, 'listarMunicipiosPorUf']);
     });
+    Route::get('/uf', [IbgeController::class, 'listarUfs']);
 });

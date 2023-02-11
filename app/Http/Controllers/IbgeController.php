@@ -66,6 +66,11 @@ class IbgeController extends Controller
         return response()->json($resultadoConsulta, 200);
     }
 
+    public function listarUfs()
+    {
+        return response()->json('teste', 200);
+    }
+
     private function formataMensagemErro(): array
     {
         return [
